@@ -40,7 +40,13 @@
 
             #endregion
 
-            #region Q3: 
+            #region Q3: Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+
+            //int[] arr = { 10, 20, 30, 40, 50 };
+            //int min, max;
+            //MinMaxArray(arr, out min, out max);
+            //Console.WriteLine("Min: " + min); // 10
+            //Console.WriteLine("Max: " + max); // 50
 
             #endregion
         }
@@ -68,6 +74,25 @@
             sum = num1 + num2;
             mul = num1 * num2;
 
+        }
+        #endregion
+
+        #region Q3 Methods
+        static void MinMaxArray(int[] arr, out int min, out int max)
+        {
+            min = arr[0];
+            max = arr[0];
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                }
+                else if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+            }
         } 
         #endregion
 
